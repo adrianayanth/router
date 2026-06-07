@@ -1,9 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <meta http-equiv="refresh" content="0; url=http://192.168.1.1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configurar Módem</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; background: #f0f0f0; }
+    h1 { color: #0057a8; text-align: center; }
+    .paso { background: white; border-radius: 10px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .paso h2 { color: #0057a8; }
+    img { width: 100%; border-radius: 8px; margin-top: 10px; }
+    .boton { display: block; background: #0057a8; color: white; text-align: center; padding: 15px; border-radius: 10px; font-size: 18px; text-decoration: none; margin-bottom: 20px; }
+    .alerta { background: #fff3cd; border-left: 4px solid #ffc107; padding: 10px; border-radius: 5px; }
+  </style>
 </head>
 <body>
-  <a href="http://192.168.1.1">Toque aquí para abrir el módem</a>
+  <h1>Configurar Módem</h1>
+
+  <a class="boton" href="http://192.168.1.1">👆 Toque aquí para abrir el módem</a>
+
+  <div class="paso">
+    <h2>Paso 1 - Ingresar al módem</h2>
+    <p>Se abrirá esta pantalla. Ingrese:</p>
+    <p>👤 Usuario: <strong>admin</strong><br>🔑 Contraseña: <strong>1234</strong></p>
+    <img src="Captura de pantalla 2026-06-07 135900.jpg" alt="Login módem">
+  </div>
+
+  <div class="paso">
+    <h2>Paso 2 - Ir a configuración WiFi</h2>
+    <p>Seleccione <strong>Net → WLAN → WLAN Parameter Configuration</strong></p>
+    <img src="Captura de pantalla 2026-06-07 140435.jpg" alt="Configuración WiFi">
+  </div>
+
+  <div class="paso">
+    <h2>Paso 3 - Cambiar nombre y contraseña</h2>
+    <p>📶 <strong>SSID</strong> = Nombre de la red WiFi<br>🔐 <strong>WPA Pre-Shared Key</strong> = Contraseña WiFi</p>
+  </div>
+
+  <div class="paso">
+    <h2>Paso 4 - Guardar cambios</h2>
+    <p>Toque el botón <strong>Apply</strong> para guardar.</p>
+    <div class="alerta">⚠️ Al guardar, todos los equipos se desconectarán y deben reconectarse con la nueva contraseña.</div>
+  </div>
+
 </body>
 </html>
